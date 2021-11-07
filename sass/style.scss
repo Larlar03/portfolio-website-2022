@@ -1,12 +1,145 @@
+/*Imports*/
+@import "color";
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;600;700&family=Spectral:wght@400;600;700&display=swap");
+
+/*Font Variables*/
+$karla: "karla", sans-serif;
+$spectral: "Spectral", serif;
+$body: 16px;
+$small-body: 1.125rem;
+$h1: 1.8rem;
+$h2: 1.1rem;
+$h3: 1.3rem;
+
 html {
   scroll-behavior: smooth;
   body {
     width: 100%;
     height: 100%;
     margin: 0 auto;
+    color: $black;
+    font-family: $karla;
+    font-size: $body;
+    line-height: 1.4;
 
     main {
-      width: ;
+      width: 100%;
+      height: 100%;
+      /*Home Section*/
+      #home {
+        width: 100%;
+        height: 100vh;
+        background-color: $mauve3;
+        padding: 0 80px;
+        /*Nav*/
+        nav {
+          width: 100%;
+          height: 50px;
+          margin: 0 auto;
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: space-between;
+          align-items: center;
+          font-family: $spectral;
+          font-weight: 700;
+          font-size: 1.1rem;
+          position: fixed;
+          z-index: 100;
+          left: 0;
+          padding: 0 80px;
+          background-color: $mauve3;
+          #logo {
+            width: 50%;
+          }
+          #menu {
+            width: 50%;
+            ul {
+              list-style: none;
+              text-align: right;
+              margin: 0;
+              li {
+                display: inline;
+                a.portfolio-link {
+                  text-decoration: none;
+                  color: $black;
+                }
+                .forward-slash {
+                  padding: 0 5px 0 9px;
+                }
+                i {
+                  color: $violetblue;
+                  margin: 0 2px;
+                }
+              }
+            }
+          }
+        }
+        /*Hero Area*/
+        #hero {
+          width: 90%;
+          height: 100vh;
+          margin: 0 auto;
+          padding-bottom: 50px;
+          background-image: url("../img/eye.png");
+          background-size: 400px;
+          background-repeat: no-repeat;
+          background-position: center center;
+          position: relative;
+          top: 25px;
+          #hero-text {
+            width: 95%;
+            height: 100%;
+            margin: 0 auto;
+            padding-bottom: 50px;
+            display: flex;
+            flex-direction: column nowrap;
+            justify-content: space-between;
+            align-items: center;
+            #intro-column {
+              width: 40%;
+              align-self: flex-start;
+              margin-top: 140px;
+              h1 {
+                font-family: $spectral;
+                font-size: $h1;
+                font-weight: 700;
+                line-height: 1.4;
+              }
+              h2 {
+                font-size: $h2;
+                line-height: 1.4;
+              }
+            }
+
+            #skills-column {
+              width: 40%;
+              align-self: flex-end;
+              margin-bottom: 20px;
+              .skills {
+                font-size: $body;
+                line-height: 1.4;
+
+                h5 {
+                  font-size: $body;
+                  font-weight: 700;
+                }
+                ul {
+                  list-style: none;
+                  padding: 0;
+                  li {
+                    display: inline;
+                    padding-right: 2px;
+                  }
+                }
+              }
+              #tech-skills {
+              }
+              #design-skills {
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

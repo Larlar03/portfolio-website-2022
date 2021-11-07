@@ -1,17 +1,1 @@
-/* Error: Expected expression.
- *   ,
- * 9 |       width: ;
- *   |              ^
- *   '
- *   sass/style.scss 9:14  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Expected expression.\a   \2577 \a 9 \2502        width: ;\a   \2502               ^\a   \2575 \a   sass/style.scss 9:14  root stylesheet";
-}
+@import"https://fonts.googleapis.com/css2?family=Karla:wght@400;600;700&family=Spectral:wght@400;600;700&display=swap";html{scroll-behavior:smooth}html body{width:100%;height:100%;margin:0 auto;color:#19181b;font-family:"karla",sans-serif;font-size:16px;line-height:1.4}html body main{width:100%;height:100%}html body main #home{width:100%;height:100vh;background-color:#f5f0ff;padding:0 80px}html body main #home nav{width:100%;height:50px;margin:0 auto;display:flex;flex-flow:row nowrap;justify-content:space-between;align-items:center;font-family:"Spectral",serif;font-weight:700;font-size:1.1rem;position:fixed;z-index:100;left:0;padding:0 80px;background-color:#f5f0ff}html body main #home nav #logo{width:50%}html body main #home nav #menu{width:50%}html body main #home nav #menu ul{list-style:none;text-align:right;margin:0}html body main #home nav #menu ul li{display:inline}html body main #home nav #menu ul li a.portfolio-link{text-decoration:none;color:#19181b}html body main #home nav #menu ul li .forward-slash{padding:0 5px 0 9px}html body main #home nav #menu ul li i{color:#abaee3;margin:0 2px}html body main #home #hero{width:90%;height:100vh;margin:0 auto;padding-bottom:50px;background-image:url("../img/eye.png");background-size:400px;background-repeat:no-repeat;background-position:center center;position:relative;top:25px}html body main #home #hero #hero-text{width:95%;height:100%;margin:0 auto;padding-bottom:50px;display:flex;flex-direction:column nowrap;justify-content:space-between;align-items:center}html body main #home #hero #hero-text #intro-column{width:40%;align-self:flex-start;margin-top:140px}html body main #home #hero #hero-text #intro-column h1{font-family:"Spectral",serif;font-size:1.8rem;font-weight:700;line-height:1.4}html body main #home #hero #hero-text #intro-column h2{font-size:1.1rem;line-height:1.4}html body main #home #hero #hero-text #skills-column{width:40%;align-self:flex-end;margin-bottom:20px}html body main #home #hero #hero-text #skills-column .skills{font-size:16px;line-height:1.4}html body main #home #hero #hero-text #skills-column .skills h5{font-size:16px;font-weight:700}html body main #home #hero #hero-text #skills-column .skills ul{list-style:none;padding:0}html body main #home #hero #hero-text #skills-column .skills ul li{display:inline;padding-right:2px}/*# sourceMappingURL=style.css.map */

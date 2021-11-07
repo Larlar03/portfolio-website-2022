@@ -12,6 +12,10 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <script
+      src="https://kit.fontawesome.com/5beeba53dd.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <main>
@@ -19,55 +23,65 @@
       <section id="home">
         <!--Navigation-->
         <nav>
-          <div class="logo">Lana Gordon</div>
-          <div class="menu">
-            Portfolio /
+          <div id="logo">Lana Gordon</div>
+          <div id="menu">
             <ul>
-              <li>Github</li>
-              <li>LinkedIn</li>
-              <li>Email</li>
+              <li>
+                <a href="#projects" class="portfolio-link">Portfolio</a
+                ><span class="forward-slash">/</span>
+              </li>
+
+              <li>
+                <a href="#"><i class="fab fa-github"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-at"></i></a>
+              </li>
             </ul>
           </div>
         </nav>
         <!--Hero Area-->
-        <div id="hero" class="row">
-          <div class="col-5">
-            <h1>
-              Front-End Development <br />
-              Portfolio of Lana Gordon
-            </h1>
-            <h2>
-              Hi, I'm a Junior Front-End Developer based in the UK, creating
-              websites from design to deployment.
-            </h2>
-          </div>
-          <div class="col-2"></div>
-          <div class="col-5">
-            <div id="tech-skills" class="skills">
-              <h5>Technical Skills</h5>
-              <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>SCSS</li>
-                <li>JavaScript</li>
-                <li>ReactJS</li>
-                <li>jQuery</li>
-                <li>Git</li>
-              </ul>
+        <div id="hero">
+          <div id="hero-text">
+            <div id="intro-column">
+              <h1>
+                Front-End Development <br />
+                Portfolio of Lana Gordon
+              </h1>
+              <h2>
+                Hi, I'm a Junior Front-End Developer based in the UK, creating
+                websites from design to deployment.
+              </h2>
             </div>
-            <div id="design-skills" class="skills">
-              <h5>Design Skills</h5>
-              <ul>
-                <li>Photoshop</li>
-                <li>Illustrator</li>
-                <li>Figma</li>
-                <li>Unity</li>
-                <li>Blender</li>
-              </ul>
+            <div id="skills-column">
+              <div id="tech-skills" class="skills">
+                <h5>Technical Skills</h5>
+                <ul>
+                  <li>HTML,</li>
+                  <li>CSS,</li>
+                  <li>SCSS,</li>
+                  <li>JavaScript,</li>
+                  <li>ReactJS,</li>
+                  <li>jQuery,</li>
+                  <li>Git</li>
+                </ul>
+              </div>
+              <div id="design-skills" class="skills">
+                <h5>Design Skills</h5>
+                <ul>
+                  <li>Photoshop,</li>
+                  <li>Illustrator,</li>
+                  <li>Figma,</li>
+                  <li>Unity,</li>
+                  <li>Blender</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-        <div class="down-arrow"><img src="" alt="Down Arrow" /></div>
       </section>
       <!--Projects Section-->
       <section id="projects">
