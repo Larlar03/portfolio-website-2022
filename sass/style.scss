@@ -207,7 +207,7 @@ html {
                   color: $black;
                   text-decoration: none;
                   &:hover {
-                    color: red;
+                    color: $lavender1;
                   }
                 }
               }
@@ -247,6 +247,17 @@ html {
             }
             #card-2 {
               background-color: $mauve3;
+              h4 {
+                a {
+                  color: $grey2 !important;
+                }
+              }
+              p {
+                color: $grey2 !important;
+              }
+              ul {
+                color: $grey2 !important;
+              }
             }
             #card-3 {
               background-color: $mauve3;
