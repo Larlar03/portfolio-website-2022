@@ -16,73 +16,302 @@ $h1: 1.8rem;
 $h2: 1.1rem;
 $h3: 1.8rem;
 
-html {
-  scroll-behavior: smooth;
-  body {
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    color: $black;
-    font-family: $roboto;
-    font-size: $body;
-    line-height: 1.4;
-    background-color: $mauve3;
-
-    main {
+/*MOBILE & TABLET*/
+@media (min-width: 320px) and (max-width: 1024px) {
+  html {
+    scroll-behavior: smooth;
+    body {
       width: 100%;
       height: 100%;
-      /*Home Section*/
-      #home {
-        width: 100%;
-        height: 100vh;
+      margin: 0 auto;
+      color: $black;
+      font-family: $roboto;
+      font-size: $body;
+      line-height: 1.4;
+      background-color: $mauve3;
 
-        padding: 0 80px;
-        margin: 0 auto;
-        /*Nav*/
-        nav {
+      main {
+        width: 100%;
+        height: 100%;
+        /*Mobile Home Section*/
+        #home {
           width: 100%;
-          height: 50px;
+          height: 100%;
           margin: 0 auto;
-          display: flex;
-          flex-flow: row nowrap;
-          justify-content: space-between;
-          align-items: center;
-          font-family: $spectral;
-          font-weight: 700;
-          font-size: 1.1rem;
-          position: fixed;
-          z-index: 100;
-          left: 0;
-          padding: 0 80px;
-          background-color: $mauve3;
-          #logo {
-            width: 50%;
-            a {
-              text-decoration: none;
-              color: $black;
-              &:hover {
-                color: $wildblue;
+          /*Nav*/
+          nav {
+            width: 100%;
+            height: 50px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+            font-family: $spectral;
+            font-weight: 700;
+            font-size: 1.1rem;
+            position: fixed;
+            z-index: 100;
+            left: 0;
+            background-color: $mauve3;
+            #logo {
+              width: 50%;
+              a {
+                text-decoration: none;
+                color: $black;
+                &:hover {
+                  color: $wildblue;
+                }
+              }
+            }
+            #menu {
+              width: 50%;
+              text-align: right;
+              ul {
+                display: none;
+              }
+              i {
+                color: $violetblue;
+                margin: 0 2px;
+                &:hover {
+                  color: $wildblue;
+                }
               }
             }
           }
-          #menu {
-            width: 50%;
-            ul {
-              list-style: none;
-              text-align: right;
-              margin: 0;
-              li {
-                display: inline;
-                a.portfolio-link {
-                  text-decoration: none;
-                  color: $black;
-                  &:hover {
-                    color: $wildblue;
+          /*Mobile Hero Area*/
+          #hero {
+            width: 80%;
+            height: 100%;
+            margin: 0 auto;
+            padding-bottom: 50px;
+            position: relative;
+            top: 25px;
+            #hero-text {
+              max-width: 100%;
+              height: 100%;
+              margin: 0 auto;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              #intro-column {
+                width: 100%;
+                height: auto;
+                margin-top: 80px;
+                text-align: center;
+                h1 {
+                  font-family: $roboto;
+                  font-size: 1.5rem;
+                  font-weight: 500;
+                  line-height: 1.4;
+                  margin-bottom: 10px;
+                }
+                h2 {
+                  font-size: $body;
+                  line-height: 1.4;
+                  font-weight: 400;
+                  margin-bottom: 0;
+                }
+              }
+
+              #mobile-gif {
+                width: 100%;
+                padding: 40px 0;
+                img {
+                  width: 100%;
+                }
+              }
+
+              #skills-column {
+                width: 100%;
+                height: auto;
+                text-align: center;
+                #design-skills {
+                  margin: 25px auto;
+                }
+
+                .skills {
+                  font-size: $body;
+                  line-height: 1.4;
+
+                  h5 {
+                    font-size: $body;
+                    font-weight: 700;
+                  }
+                  ul {
+                    list-style: none;
+                    padding: 0;
+                    li {
+                      display: inline;
+                      padding-right: 2px;
+                    }
                   }
                 }
-                .forward-slash {
-                  padding: 0 5px 0 9px;
+                ul#mobile-social-links {
+                  display: block;
+                  list-style: none;
+                  text-align: center;
+                  margin: 0 auto;
+                  padding: 0;
+                  li {
+                    display: inline;
+                    i {
+                      color: $violetblue;
+                      margin: 0 5px;
+                      &:hover {
+                        color: $wildblue;
+                      }
+                    }
+                  }
                 }
+              }
+            }
+          }
+        }
+
+        /*Mobile Projects Section*/
+        #projects {
+          width: 100%;
+          height: 100%;
+          margin: 100px auto 0 auto;
+          padding: 80px 30px;
+          background-color: #ffffff;
+          h3.developer-projects {
+            text-align: center;
+            font-size: 1.3rem;
+            font-family: $roboto;
+            font-weight: 500;
+          }
+          #underline {
+            width: 100%;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+            .eye-icon {
+              width: 30px;
+              margin: 0 15px;
+            }
+            hr {
+              width: 175px;
+              color: $violetblue;
+              opacity: 100;
+              border: none;
+              height: 1px;
+              margin: 0;
+            }
+          }
+          .project-row {
+            width: 100%;
+            height: auto;
+            margin: 30px auto 0 auto;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            .project-card {
+              box-shadow: 2px 2px 10px rgba(117, 116, 116, 0.1);
+              border-width: 0px;
+              margin: 30px auto;
+
+              .card-body {
+                padding: 1rem 1.5rem;
+                min-height: 223.16px;
+                h4 {
+                  margin-top: 4px;
+                  a {
+                    color: $black;
+                    text-decoration: none;
+                    &:hover {
+                      color: $lavender1;
+                    }
+                  }
+                }
+                p.card-text {
+                }
+                p.warning-label {
+                  font-size: $helper-text;
+                }
+                a.alt-link {
+                  color: $violetblue;
+                  text-decoration: none;
+                  &:hover {
+                    color: $violetblue3;
+                  }
+                }
+              }
+              .project-languages {
+                background-color: $mauve3;
+                padding: 0rem 1.5rem;
+                ul {
+                  padding: 0;
+                  list-style: none;
+                  font-size: $label;
+                  li {
+                    display: inline;
+                    padding-right: 2px;
+                    font-weight: 500;
+                  }
+                  a {
+                    color: $violetblue;
+                    &:hover {
+                      color: $wildblue;
+                    }
+                  }
+                }
+              }
+              #card-1,
+              #card-2,
+              #card-3,
+              #card-4,
+              #card-5,
+              #card-6 {
+                background-color: $mauve3;
+              }
+              .card-6 {
+                background-color: $mauve3;
+                h4,
+                p,
+                ul {
+                  color: $grey2 !important;
+                }
+              }
+              /*Hide Songs For You Project Desktop Links*/
+              .sfy-desktop {
+                display: none !important;
+              }
+            }
+          }
+        }
+        /*Footer*/
+        footer {
+          background-color: $mauve2;
+          width: 100%;
+          height: 100px;
+          margin: 0 auto;
+          padding: 0 80px;
+          display: flex;
+          flex-flow: column nowrap;
+          justify-content: center;
+          align-items: center;
+          font-size: $label;
+          line-height: 1.4;
+          text-align: center;
+          #footer-left {
+            width: 100%;
+          }
+          #footer-right {
+            width: 100%;
+
+            a.email-link {
+              display: none;
+            }
+            ul.contact-icons {
+              list-style: none;
+              padding: 0;
+              margin: 10px 0 0 0;
+              li {
+                display: inline;
                 i {
                   color: $violetblue;
                   margin: 0 2px;
@@ -94,210 +323,314 @@ html {
             }
           }
         }
-        /*Hero Area*/
-        #hero {
-          width: 90%;
+      }
+    }
+  }
+}
+
+/*DESKTOP*/
+@media (min-width: 1024px) {
+  html {
+    scroll-behavior: smooth;
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      color: $black;
+      font-family: $roboto;
+      font-size: $body;
+      line-height: 1.4;
+      background-color: $mauve3;
+
+      main {
+        width: 100%;
+        height: 100%;
+        /*Home Section*/
+        #home {
+          width: 100%;
           height: 100vh;
+
+          padding: 0 80px;
           margin: 0 auto;
-          padding-bottom: 50px;
-          background-image: url("../img/blinking-eye.gif");
-          background-size: 400px;
-          background-repeat: no-repeat;
-          background-position: center center;
-          position: relative;
-          top: 25px;
-          #hero-text {
-            width: 95%;
-            height: 100%;
+          /*Nav*/
+          nav {
+            width: 100%;
+            height: 50px;
             margin: 0 auto;
-            padding-bottom: 50px;
             display: flex;
-            flex-direction: column nowrap;
+            flex-flow: row nowrap;
             justify-content: space-between;
             align-items: center;
-            #intro-column {
-              width: 40%;
-              align-self: flex-start;
-              margin-top: 140px;
-              h1 {
-                font-family: $roboto;
-                font-size: $h1;
-                font-weight: 500;
-                line-height: 1.4;
-              }
-              h2 {
-                font-size: $h2;
-                line-height: 1.4;
-                font-weight: 400;
+            font-family: $spectral;
+            font-weight: 700;
+            font-size: 1.1rem;
+            position: fixed;
+            z-index: 100;
+            left: 0;
+            padding: 0 80px;
+            background-color: $mauve3;
+            #logo {
+              width: 50%;
+              a {
+                text-decoration: none;
+                color: $black;
+                &:hover {
+                  color: $wildblue;
+                }
               }
             }
-
-            #skills-column {
-              width: 40%;
-              align-self: flex-end;
-              margin-bottom: 20px;
-              .skills {
-                font-size: $body;
-                line-height: 1.4;
-
-                h5 {
-                  font-size: $body;
-                  font-weight: 700;
+            #menu {
+              width: 50%;
+              #mobile-arrow {
+                display: none !important;
+              }
+              ul {
+                display: block;
+                list-style: none;
+                text-align: right;
+                margin: 0;
+                li {
+                  display: inline;
+                  a.portfolio-link {
+                    text-decoration: none;
+                    color: $black;
+                    &:hover {
+                      color: $wildblue;
+                    }
+                  }
+                  .forward-slash {
+                    padding: 0 5px 0 9px;
+                  }
+                  i {
+                    color: $violetblue;
+                    margin: 0 2px;
+                    &:hover {
+                      color: $wildblue;
+                    }
+                  }
                 }
+              }
+            }
+          }
+          /*Hero Area*/
+          #hero {
+            width: 90%;
+            height: 100vh;
+            margin: 0 auto;
+            padding-bottom: 50px;
+            background-image: url("../img/blinking-eye.gif");
+            background-size: 400px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            position: relative;
+            top: 25px;
+            #hero-text {
+              width: 95%;
+              height: 100%;
+              margin: 0 auto;
+              padding-bottom: 50px;
+              display: flex;
+              flex-direction: column nowrap;
+              justify-content: space-between;
+              align-items: center;
+              #intro-column {
+                width: 40%;
+                align-self: flex-start;
+                margin-top: 140px;
+                h1 {
+                  font-family: $roboto;
+                  font-size: $h1;
+                  font-weight: 500;
+                  line-height: 1.4;
+                }
+                h2 {
+                  font-size: $h2;
+                  line-height: 1.4;
+                  font-weight: 400;
+                }
+              }
+              #mobile-gif {
+                display: none !important;
+              }
+
+              #skills-column {
+                width: 40%;
+                align-self: flex-end;
+                margin-bottom: 20px;
+                .skills {
+                  font-size: $body;
+                  line-height: 1.4;
+
+                  h5 {
+                    font-size: $body;
+                    font-weight: 700;
+                  }
+                  ul {
+                    list-style: none;
+                    padding: 0;
+                    li {
+                      display: inline;
+                      padding-right: 2px;
+                    }
+                  }
+                }
+                #mobile-social-links {
+                  display: none !important;
+                }
+              }
+            }
+          }
+        }
+        /*Projects Section*/
+        #projects {
+          width: 100%;
+          height: 100%;
+          margin: 100px auto 0 auto;
+          padding: 80px 80px 100px 80px;
+          background-color: #ffffff;
+          h3.developer-projects {
+            text-align: center;
+            font-size: $h3;
+            font-family: $roboto;
+            font-weight: 500;
+          }
+          #underline {
+            width: 100%;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+            .eye-icon {
+              width: 30px;
+              margin: 0 15px;
+            }
+            hr {
+              width: 175px;
+              color: $violetblue;
+              opacity: 100;
+              border: none;
+              height: 1px;
+              margin: 0;
+            }
+          }
+          .project-row {
+            width: 100%;
+            height: auto;
+            margin: 100px auto 50px auto;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            .project-card {
+              box-shadow: 2px 2px 10px rgba(117, 116, 116, 0.1);
+              border-width: 0px;
+
+              .card-body {
+                padding: 1rem 1.5rem;
+                min-height: 223.16px;
+                h4 {
+                  margin-top: 4px;
+                  a {
+                    color: $black;
+                    text-decoration: none;
+                    &:hover {
+                      color: $lavender1;
+                    }
+                  }
+                }
+                p.card-text {
+                }
+                p.warning-label {
+                  font-size: $helper-text;
+                }
+                a.alt-link {
+                  color: $violetblue;
+                  text-decoration: none;
+                  &:hover {
+                    color: $violetblue3;
+                  }
+                }
+              }
+              .project-languages {
+                background-color: $mauve3;
+                padding: 0rem 1.5rem;
                 ul {
-                  list-style: none;
                   padding: 0;
+                  list-style: none;
+                  font-size: $label;
                   li {
                     display: inline;
                     padding-right: 2px;
+                    font-weight: 500;
+                  }
+                  a {
+                    color: $violetblue;
+                    &:hover {
+                      color: $wildblue;
+                    }
                   }
                 }
+              }
+              #card-1,
+              #card-2,
+              #card-3,
+              #card-4,
+              #card-5,
+              #card-6 {
+                background-color: $mauve3;
+              }
+              .card-6 {
+                background-color: $mauve3;
+                h4,
+                p,
+                ul {
+                  color: $grey2 !important;
+                }
+              }
+              /*Hide Songs For You Project Mobile Links*/
+              .sfy-mobile {
+                display: none !important;
+              }
+              /*Show Songs For You Project Desktop Links*/
+              .sfy-desktop {
+                display: block !important;
               }
             }
           }
         }
-      }
-      /*Projects Section*/
-      #projects {
-        width: 100%;
-        height: 100%;
-        margin: 100px auto 0 auto;
-        padding: 80px 80px 100px 80px;
-        background-color: #ffffff;
-        h3.developer-projects {
-          text-align: center;
-          font-size: $h3;
-          font-family: $roboto;
-          font-weight: 500;
-        }
-        #underline {
+        /*Footer*/
+        footer {
+          background-color: $mauve2;
           width: 100%;
+          height: 100px;
+          margin: 0 auto;
+          padding: 0 80px;
           display: flex;
           flex-flow: row nowrap;
-          justify-content: center;
           align-items: center;
-          .eye-icon {
-            width: 30px;
-            margin: 0 15px;
+          font-size: $label;
+          line-height: 1.4;
+          #footer-left {
+            width: 50%;
           }
-          hr {
-            width: 175px;
-            color: $violetblue;
-            opacity: 100;
-            border: none;
-            height: 1px;
-            margin: 0;
-          }
-        }
-        .project-row {
-          width: 100%;
-          height: auto;
-          margin: 100px auto 50px auto;
-          display: flex;
-          flex-flow: row wrap;
-          justify-content: space-evenly;
-          .project-card {
-            box-shadow: 2px 2px 10px rgba(117, 116, 116, 0.1);
-            border-width: 0px;
-
-            .card-body {
-              padding: 1rem 1.5rem;
-              height: 223.16px;
-              h4 {
-                margin-top: 4px;
-                a {
-                  color: $black;
-                  text-decoration: none;
-                  &:hover {
-                    color: $lavender1;
-                  }
-                }
-              }
-              p.card-text {
-              }
-              p.warning-label {
-                font-size: $helper-text;
-              }
-              a.alt-link {
-                color: $violetblue;
-                text-decoration: none;
-                &:hover {
-                  color: $violetblue3;
-                }
-              }
+          #footer-right {
+            width: 50%;
+            text-align: right;
+            a.email-link {
+              color: $black;
+              text-decoration: none;
             }
-            .project-languages {
-              background-color: $mauve3;
-              padding: 0rem 1.5rem;
-              ul {
-                padding: 0;
-                list-style: none;
-                font-size: $label;
-                li {
-                  display: inline;
-                  padding-right: 2px;
-                  font-weight: 500;
-                }
-                a {
+            ul.contact-icons {
+              list-style: none;
+
+              margin: 0;
+              li {
+                display: inline;
+                i {
                   color: $violetblue;
+                  margin: 0 2px;
                   &:hover {
                     color: $wildblue;
                   }
-                }
-              }
-            }
-            #card-1,
-            #card-2,
-            #card-3,
-            #card-4,
-            #card-5,
-            #card-6 {
-              background-color: $mauve3;
-            }
-            .card-6 {
-              background-color: $mauve3;
-              h4,
-              p,
-              ul {
-                color: $grey2 !important;
-              }
-            }
-          }
-        }
-      }
-      /*Footer*/
-      footer {
-        background-color: $mauve2;
-        width: 100%;
-        height: 100px;
-        margin: 0 auto;
-        padding: 0 80px;
-        display: flex;
-        flex-flow: row nowrap;
-        align-items: center;
-        font-size: $label;
-        line-height: 1.4;
-        #footer-left {
-          width: 50%;
-        }
-        #footer-right {
-          width: 50%;
-          text-align: right;
-          a.email-link {
-            color: $black;
-            text-decoration: none;
-          }
-          ul.contact-icons {
-            list-style: none;
-
-            margin: 0;
-            li {
-              display: inline;
-              i {
-                color: $violetblue;
-                margin: 0 2px;
-                &:hover {
-                  color: $wildblue;
                 }
               }
             }
