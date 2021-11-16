@@ -23,7 +23,7 @@ html {
     height: 100%;
     margin: 0 auto;
     color: $black;
-    font-family: $karla;
+    font-family: $roboto;
     font-size: $body;
     line-height: 1.4;
 
@@ -98,8 +98,8 @@ html {
           h3.project-title {
             text-align: center;
             font-size: $h3;
-            font-family: $spectral;
-            font-weight: 700;
+            font-family: $roboto;
+            font-weight: 500;
             margin-top: 30px;
           }
           #underline {
@@ -127,7 +127,13 @@ html {
             margin: 0 auto;
           }
           p {
+            width: 60%;
             margin: 30px auto;
+            line-height: 1.4;
+            text-align: justify;
+          }
+          span.warning-label {
+            font-size: $helper-text;
           }
           #images {
             width: 100%;
